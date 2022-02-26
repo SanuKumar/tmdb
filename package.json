@@ -1,0 +1,27 @@
+{
+  "name": "tmdb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "server": "nodemon app.js",
+    "client": "npm start --prefix frontend",
+    "mock": "serve -s ./frontend/mock_build/build",
+    "dev-mock": "concurrently \"npm run server\" \"npm run client\" \"npm run mock\"",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Sanu",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.25.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "express-jwt": "^6.1.0",
+    "jwks-rsa": "^2.0.5",
+    "nodemon": "^2.0.15"
+  },
+  "devDependencies": {
+    "concurrently": "^7.0.0"
+  }
+}

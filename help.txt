@@ -1,0 +1,2 @@
+
+ // "client": "set PORT=3006 && npm start --prefix frontend", 
